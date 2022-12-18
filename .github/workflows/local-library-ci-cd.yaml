@@ -65,4 +65,4 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
           password: ${{ secrets.EC2_PASSWORD }}
-          script: /bin/bash /opt/local-library/deploy.sh $IMAGE_TAG
+          script: /bin/bash /opt/local-library/deploy.sh ${{ github.sha }}
